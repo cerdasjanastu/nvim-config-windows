@@ -1,0 +1,12 @@
+{
+  "brightburn": { "branch": "master", "commit": "623c4f01801e93df18b1df5b9e95729ac03affce" },
+  "gruvbox": { "branch": "main", "commit": "7a1b23e4edf73a39642e77508ee6b9cbb8c60f9e" },
+  "lazy.nvim": { "branch": "main", "commit": "16ccd54360651ad2b27ee0117365f7a33577ea3c" },
+  "nvim-treesitter": { "branch": "master", "commit": "a8c082b4f5b3b70bde2ffb08cc112dfd7e515fb3" },
+  "nvim-ts-autotag": { "branch": "main", "commit": "ddfccbf0df1b9349c2b9e9b17f4afa8f9b6c1ed1" },
+  "plenary.nvim": { "branch": "master", "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683" },
+  "rose-pine": { "branch": "main", "commit": "dded5c15e9d27ac95ad1e803b35a752d80f3f42b" },
+  "telescope": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
+  "tokyonight": { "branch": "main", "commit": "ee612bf60608376d877c883eca641d87da9bd486" },
+  "undotree": { "branch": "master", "commit": "56c684a805fe948936cda0d1b19505b84ad7e065" }
+}
