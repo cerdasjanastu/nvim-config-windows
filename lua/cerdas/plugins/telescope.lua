@@ -4,7 +4,8 @@ return {
         name = "telescope",
         tag = "0.1.8",
         dependencies = {
-            "nvim-lua/plenary.nvim" 
+            "nvim-lua/plenary.nvim",
+            lazy = false
         }, 
         config = function()
             require("telescope").setup({
