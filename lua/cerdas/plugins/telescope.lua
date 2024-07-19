@@ -4,8 +4,14 @@ return {
         name = "telescope",
         tag = "0.1.8",
         dependencies = {
-            "nvim-lua/plenary.nvim",
-            lazy = false
+            {
+                "nvim-lua/plenary.nvim",
+                lazy = false
+            },
+            {
+                'nvim-telescope/telescope-fzf-native.nvim', 
+                build = 'make',
+            },
         }, 
         config = function()
             require("telescope").setup({
@@ -21,9 +27,11 @@ return {
                         n = {
                             ["<C-c>"] = "close"
                         }
-                    }
+                    },
                 },
             })
+
+            require('telescope').load_extension('fzf')
 
             local builtin = require("telescope.builtin")
 
@@ -43,5 +51,5 @@ return {
             vim.keymap.set("n", "<leader>vh", builtin.help_tags, {})
             vim.keymap.set("n", "<leader>tel", builtin.builtin, {})
         end
-    }
+    },
 }
