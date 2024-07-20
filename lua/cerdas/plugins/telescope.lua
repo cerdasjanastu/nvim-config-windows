@@ -1,6 +1,6 @@
 return {
     {
-        "nvim-telescope/telescope.nvim", 
+        "nvim-telescope/telescope.nvim",
         name = "telescope",
         tag = "0.1.8",
         dependencies = {
@@ -9,10 +9,12 @@ return {
                 lazy = false
             },
             {
-                'nvim-telescope/telescope-fzf-native.nvim', 
-                build = 'make',
+                -- if this doesn't work
+                -- force build again using gb in :Lazy
+                "nvim-telescope/telescope-fzf-native.nvim",
+                build = "make"
             },
-        }, 
+        },
         config = function()
             require("telescope").setup({
                 defaults = {
@@ -31,7 +33,7 @@ return {
                 },
             })
 
-            require('telescope').load_extension('fzf')
+            require("telescope").load_extension("fzf")
 
             local builtin = require("telescope.builtin")
 
