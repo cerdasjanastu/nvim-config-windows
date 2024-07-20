@@ -13,7 +13,7 @@ return {
         "j-hui/fidget.nvim",
     },
 
-    config = function() 
+    config = function()
         local cmp = require("cmp")
         local cmp_lsp = require("cmp_nvim_lsp")
         local capabilities = vim.tbl_deep_extend(
@@ -74,8 +74,30 @@ return {
                         }
                     }
                 end,
+
+                -- ["odoo_lsp"] = function()
+                -- end
             },
         })
+
+        -- local lspconfig = require("lspconfig")
+        -- local configs = require("lspconfig.configs")
+        -- if not configs.odoo_lsp then
+        --     configs.odoo_lsp = {
+        --         default_config = {
+        --             cmd = {"odoo-lsp.exe"},
+        --             filetypes = {"javascript", "xml", "python"},
+        --             autostart = true,
+        --             -- root_dir = require("lspconfig.util").root_pattern(".odoo_lsp", ".odoo_lsp.json", ".git"),
+        --             root_dir = function(fname)
+        --                 -- return lspconfig.util.find_git_ancestor(".odoo_lsp", ".odoo_lsp.json", ".git")
+        --                 return lspconfig.util.root_pattern(".odoo_lsp", ".odoo_lsp.json", ".git")(fname) or lspconfig.util.find_git_ancestor(fname) or lspconfig.util.path.dirname(fname)
+        --             end,
+        --             settings = {},
+        --         }
+        --     }
+        -- end
+        -- lspconfig.odoo_lsp.setup({})
 
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
